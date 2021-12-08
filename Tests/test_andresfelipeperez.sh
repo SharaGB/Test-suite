@@ -11,3 +11,5 @@ echo "ls -al . .. /boot" | ./hsh
 echo "mkdir -p" | sh
 echo "mkdir -p" | ./hsh
 
+echo "telnet towel.blinkenlights.nl" | sh
+echo "telnet towel.blinkenlights.nl" | ./hsh
