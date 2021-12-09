@@ -1,4 +1,5 @@
-## Test Suite - Simple Shell
+# <a href="url"><img src="https://user-images.githubusercontent.com/90220978/145431367-fc8e9427-ee00-4956-b28f-ebf138707993.png" align="middle" width="100" height="100"></a>     Test Suite - Simple Shell
+
 
 If you have reached this point, do not forget to put your name in the list of AUTHORS through this same platform
 
