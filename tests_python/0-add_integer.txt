@@ -54,11 +54,6 @@ Now use it:
     ...
     TypeError: a must be an integer
 
-    >>> add_integer(1e10000, 1e200)
-    Traceback (most recent call last):
-    ...
-    OverflowError: a is too large
-
     >>> add_integer(None, 12)
     Traceback (most recent call last):
     ...
