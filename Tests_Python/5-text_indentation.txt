@@ -1,0 +1,64 @@
+The ``5-text_indentation`` module
+======================
+
+Using ``text_indentation``
+-------------------
+
+First import ``text_indentation`` from the ``5-text_indentation`` module:
+
+    >>> text_indentation = __import__("5-text_indentation").text_indentation
+
+Now use it:
+
+    >>> text_indentation("hola?        tal")
+    hola?
+    <BLANKLINE>
+    tal
+
+    >>> text_indentation("""estaba: en la plaza? esperando la tormenta.     sí. \n tal""")
+    estaba:
+    <BLANKLINE>
+    en la plaza?
+    <BLANKLINE>
+    esperando la tormenta.
+    <BLANKLINE>
+    sí.
+    <BLANKLINE>
+    <BLANKLINE>
+    tal
+
+    >>> text_indentation("")
+
+    >>> text_indentation(".       ")
+    .
+    <BLANKLINE>
+
+    >>> text_indentation(".       letter        ?       ")
+    .
+    <BLANKLINE>
+    letter        ?
+    <BLANKLINE>
+
+    >>> text_indentation(".         ?       \n      :")
+    .
+    <BLANKLINE>
+    ?
+    <BLANKLINE>
+    <BLANKLINE>
+    :
+    <BLANKLINE>
+
+    >>> text_indentation(True)
+    Traceback (most recent call last):
+    ...
+    TypeError: text must be a string
+
+    >>> text_indentation(["list", "no found"])
+    Traceback (most recent call last):
+    ...
+    TypeError: text must be a string
+
+    >>> text_indentation(5)
+    Traceback (most recent call last):
+    ...
+    TypeError: text must be a string
