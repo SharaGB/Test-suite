@@ -68,3 +68,9 @@ Now use it:
     Traceback (most recent call last):
     ...
     TypeError: add_integer() missing 1 required positional argument: 'a'
+
+    >>> add_integer(666666666, 1234567)
+    667901233
+
+    >>> add_integer(2)
+    100
