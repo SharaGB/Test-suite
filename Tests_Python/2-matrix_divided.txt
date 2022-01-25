@@ -75,3 +75,41 @@ Now use it:
     Traceback (most recent call last):
     ...
     TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+    >>> matrix = [[9, 18, 27], [3, 6, 9]]
+    >>> matrix_divided(matrix, k)
+    Traceback (most recent call last):
+        ...
+    NameError: name 'k' is not defined
+
+    >>> matrix = [[9, 18, 27], [3, 6, 9]]
+    >>> matrix_divided(matrix, "Hey")
+    Traceback (most recent call last):
+        ...
+    TypeError: div must be a number
+
+    >>> matrix = [[9, 18, 27], [3, 6, 9]]
+    >>> matrix_divided(matrix, None)
+    Traceback (most recent call last):
+        ...
+    TypeError: div must be a number
+
+    >>> matrix = [[3.14, 4.25], [7.05, 14.34]]
+    >>> matrix_divided(matrix, 2.5)
+    [[1.26, 1.7], [2.82, 5.74]]
+
+    >>> matrix = [[20, 19, 18], [17, 16, 15]]
+    >>> matrix_divided(matrix)
+    Traceback (most recent call last):
+        ...
+    TypeError: matrix_divided() missing 1 required positional argument: 'div'
+
+    >>> matrix = [[20, 19, 18], [17, 16, 15]]
+    >>> matrix_divided(2)
+    Traceback (most recent call last):
+        ...
+    TypeError: matrix_divided() missing 1 required positional argument: 'div'
+
+    >>> matrix = [[-9, -27]]
+    >>> matrix_divided(matrix, 9)
+    [[-1.0, -3.0]]
